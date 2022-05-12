@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+* {
+  font-family: "Roboto";
+}
+body {
+  background: #0d2a45;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  top: 50px;
+  margin: auto;
+  text-align: center;
+  width: 500px;
+  overflow: auto;
+  padding: 30px 30px;
+  border-radius: 5px;
+  background: white;
+  margin-left: 30%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn-lg {
+  background: #7fd096;
+  width: 40%;
+  padding: 18px;
+  border-style: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.gpBox {
+  display: flex;
+}
+.inputBox {
+  display: none;
+}
+input {
+  display: block;
+  border-style: none;
+  border: #f4f4f4 solid 1px;
+  width: 150px;
+  margin: auto;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+input:focus {
+  outline: none !important;
+  border: blue solid 1px;
+}
+.inputBox {
+  width: 1040px;
+  margin: auto;
+  margin-left: 30%;
+}
+.inputBox input {
+  margin-right: 10px;
+}
+.gpResult {
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  margin: auto;
+  text-align: center;
+  width: 450px;
+  overflow: auto;
+  padding: 30px 30px;
+  border-radius: 5px;
+  background: white;
+  visibility: hidden;
+}
+.btn-2 {
+  width: 400px;
+  margin: auto;
+}
+/* .gpCalc {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  } */
+@media (max-width: 700px) {
+  .inputBox input {
+    width: 100px;
+  }
+  .inputBox {
+    width: 1040px;
+    margin: auto;
+    margin-left: 10%;
+  }
+}
