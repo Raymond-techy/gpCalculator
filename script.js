@@ -103,7 +103,7 @@ function loadResult() {
   if (isNaN(gp)) {
     console.log("not a number");
   } else {
-    gpResValue.textContent += `${gp}"/5"`;
+    gpResValue.textContent += `${gp}/5`;
     courseBox.style.display = "none";
     gpResult.style.visibility = "visible";
     console.log("it's a number");
