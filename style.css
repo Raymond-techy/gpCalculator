@@ -92,11 +92,12 @@ input:focus {
   } */
 @media (max-width: 700px) {
   .inputBox {
+    margin: 0;
     width: 800px;
   }
   .inputBox {
     width: 1040px;
-    margin: auto;
+    margin: 0;
     margin-left: 10%;
   }
 }
