@@ -102,14 +102,18 @@ function loadResult() {
     gpResult.style.visibility = "visible";
   }
   if (gp >= 4.5) {
-    gpResPar.textContent = "welldone you still dey first class dey 😀 enjoy";
+    gpResPar.textContent = "Welldone you still dey first class dey 😀 enjoy";
     gpResImage.attributes.src = url("");
-  } else if (gp >= 4 && gp < 4.5) {
-    gpResPar.textContent = "First class no bad you can get it😀";
-  } else if (gp >= 3.5 && gp < 4) {
-    gpResPar.textContent = "you self no small put more effort😀";
-  } else if (gp >= 3 && gp < 3.5) {
-    gpResPar.textContent = "Hmm i won't talk";
+  } else if (gp >= 3.5 && gp < 4.5) {
+    gpResPar.textContent =
+      "You are on Second Class upper First class no bad you can get it😀";
+  } else if (gp >= 2.5 && gp < 3.5) {
+    gpResPar.textContent =
+      "You are on second class lower abeg put more effort😀";
+  } else if (gp >= 1.5 && gp < 2.5) {
+    gpResPar.textContent = "You dey third class abeg put more pressure";
+  } else if (gp <= 1.49) {
+    gpResPar.textContent = "Ahh na pass you dey ooo";
   }
 }
 function goBackHome() {
