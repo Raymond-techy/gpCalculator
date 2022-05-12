@@ -84,7 +84,7 @@ input:focus {
   width: 400px;
   margin: auto;
 }
-@media (max-width: 50px) {
+@media (max-width: 500px) {
   .container,
   .inputBox,
   .gpResult {
