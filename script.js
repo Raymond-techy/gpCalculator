@@ -27,7 +27,6 @@ function subCourseNo() {
     setTimeout(() => {
       msgAlert.style.display = "none";
     }, 1000);
-    // alert("input box is empty");
   }
 }
 function DuplicateForm() {
@@ -41,10 +40,7 @@ function DuplicateForm() {
     clone.children[2].classList.remove("courseGrade1");
     clone.children[3].classList.add(`${"courseunit" + counter}`);
     document.querySelector(".courseBox").appendChild(clone);
-    console.log(clone);
     counter--;
-    // console.log(clone.Children[1]);
-    // console.log(clone.Children[2]);
   }
 }
 function SubmitForm(e) {
@@ -68,7 +64,6 @@ function SubmitForm(e) {
       courseGradeNo = 0;
     }
     courseGradeArray.push(courseGradeNo);
-    console.log(courseGradeNo);
   });
   var totalCourseGrade = courseGradeArray.reduce((a, b) => a + b);
   var counter = document.querySelector(".noOfCour").value;
@@ -84,29 +79,26 @@ function SubmitForm(e) {
   for (let i = 0; i < courseGradeArray.length && courseUnitArray.length; i++) {
     var multipliedResult = courseGradeArray[i] * courseUnitArray[i];
     multipliedResultArray.push(multipliedResult);
-    console.log(multipliedResult);
   }
   var totalmultipliedResultArray = multipliedResultArray.reduce(
     (a, b) => a + b
   );
-  console.log(multipliedResultArray);
-  console.log(totalmultipliedResultArray);
-  // console.log((totalmultipliedResultArray / totalCourseGrade).toFixed(2));
   gp = (totalmultipliedResultArray / totalCourseGrade).toFixed(2);
   gp = parseFloat(gp);
-  console.log(gp);
-  console.log(typeof gp);
   loadResult();
 }
 function loadResult() {
-  console.log(gp);
   if (isNaN(gp)) {
-    console.log("not a number");
+    var msgAlert2 = document.querySelector(".msgAlert2");
+    msgAlert2.textContent += "please input something";
+    msgAlert2.style.color = "red";
+    setTimeout(() => {
+      msgAlert2.style.display = "none";
+    }, 1000);
   } else {
     gpResValue.textContent += `${gp}/5`;
     courseBox.style.display = "none";
     gpResult.style.visibility = "visible";
-    console.log("it's a number");
   }
   if (gp >= 4.5) {
     gpResPar.textContent = "welldone you still dey first class dey enjoy";
@@ -117,6 +109,5 @@ function loadResult() {
   }
 }
 function goBackHome() {
-  console.log("clicked");
   window.location.reload();
 }
