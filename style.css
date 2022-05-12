@@ -93,10 +93,10 @@ input:focus {
 @media (max-width: 700px) {
   .inputBox {
     margin: 0;
-    width: 800px;
+    width: 80%;
   }
   .inputBox {
-    width: 1040px;
+    width: 100%;
     margin: 0;
     margin-left: 10%;
   }
