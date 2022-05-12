@@ -8,6 +8,7 @@ var resInput = document.querySelectorAll(".courseBox input");
 var gpResult = document.querySelector(".gpResult");
 var gpResPar = document.querySelector(".gpResult p");
 var gpResValue = document.querySelector(".gpResult h3");
+var gpResImage = document.querySelector(".gpResult img");
 var reloadPage = document.querySelector(".relPage");
 reloadPage.addEventListener("click", goBackHome);
 var gp;
@@ -101,11 +102,14 @@ function loadResult() {
     gpResult.style.visibility = "visible";
   }
   if (gp >= 4.5) {
-    gpResPar.textContent = "welldone you still dey first class dey enjoy";
+    gpResPar.textContent = "welldone you still dey first class dey 😀 enjoy";
+    gpResImage.attributes.src = url("");
   } else if (gp >= 4 && gp < 4.5) {
-    gpResPar.textContent = "First class no bad you can get it";
-  } else if (gp >= 4 && gp < 4.5) {
-    gpResPar.textContent = "First class no bad you can get it";
+    gpResPar.textContent = "First class no bad you can get it😀";
+  } else if (gp >= 3.5 && gp < 4) {
+    gpResPar.textContent = "you self no small put more effort😀";
+  } else if (gp >= 3 && gp < 3.5) {
+    gpResPar.textContent = "Hmm i won't talk";
   }
 }
 function goBackHome() {

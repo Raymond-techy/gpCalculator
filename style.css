@@ -70,7 +70,7 @@ input:focus {
 .gpResult {
   position: fixed;
   top: 30%;
-  left: 35%;
+  left: 25%;
   margin: auto;
   text-align: center;
   width: 450px;
@@ -84,20 +84,14 @@ input:focus {
   width: 400px;
   margin: auto;
 }
-/* .gpCalc {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  } */
-@media (max-width: 700px) {
-  .noOfCourse {
-    width: 80%;
-    top: 40%;
-  }
-  .inputBox {
-    width: 100%;
-    margin: 0;
+@media (max-width: 50px) {
+  .container,
+  .inputBox,
+  .gpResult {
+    position: fixed;
+    top: 400px;
+    width: 50%;
+    margin: auto;
     margin-left: 10%;
   }
 }
