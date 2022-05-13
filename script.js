@@ -103,16 +103,20 @@ function loadResult() {
   }
   if (gp >= 4.5) {
     gpResPar.textContent = "Welldone you still dey first class dey 😀 enjoy";
-    gpResImage.attributes.src = url("");
+    gpResImage.src = "./imgs/grade (3).png";
   } else if (gp >= 3.5 && gp < 4.5) {
     gpResPar.textContent =
       "You are on Second Class upper First class no bad you can get it😀";
+    gpResImage.src = "./imgs/grade (2).png";
   } else if (gp >= 2.5 && gp < 3.5) {
     gpResPar.textContent =
       "You are on second class lower abeg put more effort😀";
+    gpResImage.src = "./imgs/grade (1).png";
   } else if (gp >= 1.5 && gp < 2.5) {
+    gpResImage.src = "./imgs/grade.png";
     gpResPar.textContent = "You dey third class abeg put more pressure";
   } else if (gp <= 1.49) {
+    gpResImage.src = "./imgs/grade (4).png";
     gpResPar.textContent = "Ahh na pass you dey ooo";
   }
 }
